@@ -23,7 +23,7 @@
 <ul class="tsd-hierarchy">
 <li><span class="target">Popup</span></li></ul></li></ul></section><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/Pax1601/DCSOlympus/blob/7a24e5d/client/src/popups/popup.ts#L3">src/popups/popup.ts:3</a></li></ul></aside>
+<li>Defined in <a href="https://github.com/Pax1601/DCSOlympus/blob/39ddf10/client/src/popups/popup.ts#L30">src/popups/popup.ts:30</a></li></ul></aside>
 <section class="tsd-panel-group tsd-index-group">
 <section class="tsd-panel tsd-index-panel">
 <details class="tsd-index-content tsd-index-accordion" open><summary class="tsd-accordion-summary tsd-index-summary">
@@ -38,8 +38,8 @@
 <div class="tsd-index-list"><a href="popups_popup.Popup.html#_element" class="tsd-index-link tsd-is-private tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><g id="icon-1024"><rect fill="var(--color-icon-background)" stroke="#FF984D" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="12"></rect><path d="M9.354 16V7.24H12.174C12.99 7.24 13.638 7.476 14.118 7.948C14.606 8.412 14.85 9.036 14.85 9.82C14.85 10.604 14.606 11.232 14.118 11.704C13.638 12.168 12.99 12.4 12.174 12.4H10.434V16H9.354ZM10.434 11.428H12.174C12.646 11.428 13.022 11.284 13.302 10.996C13.59 10.7 13.734 10.308 13.734 9.82C13.734 9.324 13.59 8.932 13.302 8.644C13.022 8.356 12.646 8.212 12.174 8.212H10.434V11.428Z" fill="var(--color-text)"></path></g></svg><span>#element</span></a>
 <a href="popups_popup.Popup.html#_eventsManager" class="tsd-index-link tsd-is-private tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>#events<wbr/>Manager</span></a>
 <a href="popups_popup.Popup.html#_fadeTime" class="tsd-index-link tsd-is-private"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>#fade<wbr/>Time</span></a>
-<a href="popups_popup.Popup.html#_hideTimer" class="tsd-index-link tsd-is-private"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>#hide<wbr/>Timer</span></a>
-<a href="popups_popup.Popup.html#_visibilityTimer" class="tsd-index-link tsd-is-private"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>#visibility<wbr/>Timer</span></a>
+<a href="popups_popup.Popup.html#_messages" class="tsd-index-link tsd-is-private"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>#messages</span></a>
+<a href="popups_popup.Popup.html#_stackAfter" class="tsd-index-link tsd-is-private"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>#stack<wbr/>After</span></a>
 </div></section>
 <section class="tsd-index-section">
 <h3 class="tsd-index-heading">Methods</h3>
@@ -57,17 +57,19 @@
 <section class="tsd-panel tsd-member"><a id="constructor" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>constructor</span><a href="#constructor" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><g stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" id="icon-anchor"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5"></path><path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5"></path></g></svg></a></h3>
 <ul class="tsd-signatures">
-<li class="tsd-signature tsd-anchor-link" id="constructor.new_Popup"><span class="tsd-kind-constructor-signature">new <wbr/>Popup</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">elementId</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="popups_popup.Popup.html" class="tsd-signature-type tsd-kind-class">Popup</a><a href="#constructor.new_Popup" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-signature tsd-anchor-link" id="constructor.new_Popup"><span class="tsd-kind-constructor-signature">new <wbr/>Popup</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">ID</span>, <span class="tsd-kind-parameter">stackAfter</span><span class="tsd-signature-symbol">?</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="popups_popup.Popup.html" class="tsd-signature-type tsd-kind-class">Popup</a><a href="#constructor.new_Popup" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
 <div class="tsd-parameters">
 <h4 class="tsd-parameters-title">Parameters</h4>
 <ul class="tsd-parameter-list">
 <li>
-<h5><span class="tsd-kind-parameter">elementId</span>: <span class="tsd-signature-type">string</span></h5></li></ul></div>
+<h5><span class="tsd-kind-parameter">ID</span>: <span class="tsd-signature-type">string</span></h5></li>
+<li>
+<h5><span class="tsd-kind-parameter">stackAfter</span>: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 5</span></h5></li></ul></div>
 <h4 class="tsd-returns-title">Returns <a href="popups_popup.Popup.html" class="tsd-signature-type tsd-kind-class">Popup</a></h4><aside class="tsd-sources">
 <p>Overrides <a href="panels_panel.Panel.html">Panel</a>.<a href="panels_panel.Panel.html#constructor">constructor</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/Pax1601/DCSOlympus/blob/7a24e5d/client/src/popups/popup.ts#L5">src/popups/popup.ts:5</a></li></ul></aside></li></ul></section></section>
+<li>Defined in <a href="https://github.com/Pax1601/DCSOlympus/blob/39ddf10/client/src/popups/popup.ts#L34">src/popups/popup.ts:34</a></li></ul></aside></li></ul></section></section>
 <section class="tsd-panel-group tsd-member-group">
 <h2>Properties</h2>
 <section class="tsd-panel tsd-member tsd-is-private tsd-is-inherited"><a id="_element" class="tsd-anchor"></a>
@@ -75,28 +77,28 @@
 <div class="tsd-signature"><span class="tsd-kind-property">#element</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type ">HTMLElement</span></div><aside class="tsd-sources">
 <p>Inherited from <a href="panels_panel.Panel.html">Panel</a>.<a href="panels_panel.Panel.html#_element">#element</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/Pax1601/DCSOlympus/blob/7a24e5d/client/src/panels/panel.ts#L5">src/panels/panel.ts:5</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/Pax1601/DCSOlympus/blob/39ddf10/client/src/panels/panel.ts#L5">src/panels/panel.ts:5</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member tsd-is-private tsd-is-inherited"><a id="_eventsManager" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagPrivate">Private</code> <span>#events<wbr/>Manager</span><a href="#_eventsManager" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">#events<wbr/>Manager</span><span class="tsd-signature-symbol">:</span> <a href="panels_paneleventsmanager.PanelEventsManager.html" class="tsd-signature-type tsd-kind-class">PanelEventsManager</a></div><aside class="tsd-sources">
 <p>Inherited from <a href="panels_panel.Panel.html">Panel</a>.<a href="panels_panel.Panel.html#_eventsManager">#eventsManager</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/Pax1601/DCSOlympus/blob/7a24e5d/client/src/panels/panel.ts#L6">src/panels/panel.ts:6</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/Pax1601/DCSOlympus/blob/39ddf10/client/src/panels/panel.ts#L6">src/panels/panel.ts:6</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member tsd-is-private"><a id="_fadeTime" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagPrivate">Private</code> <span>#fade<wbr/>Time</span><a href="#_fadeTime" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">#fade<wbr/>Time</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 2000</span></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/Pax1601/DCSOlympus/blob/7a24e5d/client/src/popups/popup.ts#L9">src/popups/popup.ts:9</a></li></ul></aside></section>
-<section class="tsd-panel tsd-member tsd-is-private"><a id="_hideTimer" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagPrivate">Private</code> <span>#hide<wbr/>Timer</span><a href="#_hideTimer" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
-<div class="tsd-signature"><span class="tsd-kind-property">#hide<wbr/>Timer</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = undefined</span></div><aside class="tsd-sources">
+<li>Defined in <a href="https://github.com/Pax1601/DCSOlympus/blob/39ddf10/client/src/popups/popup.ts#L40">src/popups/popup.ts:40</a></li></ul></aside></section>
+<section class="tsd-panel tsd-member tsd-is-private"><a id="_messages" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagPrivate">Private</code> <span>#messages</span><a href="#_messages" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<div class="tsd-signature"><span class="tsd-kind-property">#messages</span><span class="tsd-signature-symbol">:</span> <a href="popups_popup.PopupMessage.html" class="tsd-signature-type tsd-kind-class">PopupMessage</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = []</span></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/Pax1601/DCSOlympus/blob/7a24e5d/client/src/popups/popup.ts#L10">src/popups/popup.ts:10</a></li></ul></aside></section>
-<section class="tsd-panel tsd-member tsd-is-private"><a id="_visibilityTimer" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagPrivate">Private</code> <span>#visibility<wbr/>Timer</span><a href="#_visibilityTimer" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
-<div class="tsd-signature"><span class="tsd-kind-property">#visibility<wbr/>Timer</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = undefined</span></div><aside class="tsd-sources">
+<li>Defined in <a href="https://github.com/Pax1601/DCSOlympus/blob/39ddf10/client/src/popups/popup.ts#L31">src/popups/popup.ts:31</a></li></ul></aside></section>
+<section class="tsd-panel tsd-member tsd-is-private"><a id="_stackAfter" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagPrivate">Private</code> <span>#stack<wbr/>After</span><a href="#_stackAfter" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<div class="tsd-signature"><span class="tsd-kind-property">#stack<wbr/>After</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/Pax1601/DCSOlympus/blob/7a24e5d/client/src/popups/popup.ts#L11">src/popups/popup.ts:11</a></li></ul></aside></section></section>
+<li>Defined in <a href="https://github.com/Pax1601/DCSOlympus/blob/39ddf10/client/src/popups/popup.ts#L32">src/popups/popup.ts:32</a></li></ul></aside></section></section>
 <section class="tsd-panel-group tsd-member-group">
 <h2>Methods</h2>
 <section class="tsd-panel tsd-member tsd-is-inherited"><a id="getElement" class="tsd-anchor"></a>
@@ -107,7 +109,7 @@
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">HTMLElement</span></h4><aside class="tsd-sources">
 <p>Inherited from <a href="panels_panel.Panel.html">Panel</a>.<a href="panels_panel.Panel.html#getElement">getElement</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/Pax1601/DCSOlympus/blob/7a24e5d/client/src/panels/panel.ts#L32">src/panels/panel.ts:32</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/Pax1601/DCSOlympus/blob/39ddf10/client/src/panels/panel.ts#L32">src/panels/panel.ts:32</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited"><a id="getEventsManager" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>get<wbr/>Events<wbr/>Manager</span><a href="#getEventsManager" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
@@ -116,7 +118,7 @@
 <h4 class="tsd-returns-title">Returns <a href="panels_paneleventsmanager.PanelEventsManager.html" class="tsd-signature-type tsd-kind-class">PanelEventsManager</a></h4><aside class="tsd-sources">
 <p>Inherited from <a href="panels_panel.Panel.html">Panel</a>.<a href="panels_panel.Panel.html#getEventsManager">getEventsManager</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/Pax1601/DCSOlympus/blob/7a24e5d/client/src/panels/panel.ts#L40">src/panels/panel.ts:40</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/Pax1601/DCSOlympus/blob/39ddf10/client/src/panels/panel.ts#L40">src/panels/panel.ts:40</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited"><a id="getVisible" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>get<wbr/>Visible</span><a href="#getVisible" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
@@ -125,7 +127,7 @@
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4><aside class="tsd-sources">
 <p>Inherited from <a href="panels_panel.Panel.html">Panel</a>.<a href="panels_panel.Panel.html#getVisible">getVisible</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/Pax1601/DCSOlympus/blob/7a24e5d/client/src/panels/panel.ts#L36">src/panels/panel.ts:36</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/Pax1601/DCSOlympus/blob/39ddf10/client/src/panels/panel.ts#L36">src/panels/panel.ts:36</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited"><a id="hide" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>hide</span><a href="#hide" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
@@ -134,7 +136,7 @@
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <p>Inherited from <a href="panels_panel.Panel.html">Panel</a>.<a href="panels_panel.Panel.html#hide">hide</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/Pax1601/DCSOlympus/blob/7a24e5d/client/src/panels/panel.ts#L19">src/panels/panel.ts:19</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/Pax1601/DCSOlympus/blob/39ddf10/client/src/panels/panel.ts#L19">src/panels/panel.ts:19</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="setFadeTime" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>set<wbr/>Fade<wbr/>Time</span><a href="#setFadeTime" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -147,7 +149,7 @@
 <h5><span class="tsd-kind-parameter">fadeTime</span>: <span class="tsd-signature-type">number</span></h5></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/Pax1601/DCSOlympus/blob/7a24e5d/client/src/popups/popup.ts#L13">src/popups/popup.ts:13</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/Pax1601/DCSOlympus/blob/39ddf10/client/src/popups/popup.ts#L41">src/popups/popup.ts:41</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="setText" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>set<wbr/>Text</span><a href="#setText" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -160,7 +162,7 @@
 <h5><span class="tsd-kind-parameter">text</span>: <span class="tsd-signature-type">string</span></h5></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/Pax1601/DCSOlympus/blob/7a24e5d/client/src/popups/popup.ts#L17">src/popups/popup.ts:17</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/Pax1601/DCSOlympus/blob/39ddf10/client/src/popups/popup.ts#L45">src/popups/popup.ts:45</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited"><a id="show" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>show</span><a href="#show" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
@@ -169,7 +171,7 @@
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <p>Inherited from <a href="panels_panel.Panel.html">Panel</a>.<a href="panels_panel.Panel.html#show">show</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/Pax1601/DCSOlympus/blob/7a24e5d/client/src/panels/panel.ts#L14">src/panels/panel.ts:14</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/Pax1601/DCSOlympus/blob/39ddf10/client/src/panels/panel.ts#L14">src/panels/panel.ts:14</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited"><a id="toggle" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>toggle</span><a href="#toggle" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
@@ -178,7 +180,7 @@
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <p>Inherited from <a href="panels_panel.Panel.html">Panel</a>.<a href="panels_panel.Panel.html#toggle">toggle</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/Pax1601/DCSOlympus/blob/7a24e5d/client/src/panels/panel.ts#L24">src/panels/panel.ts:24</a></li></ul></aside></li></ul></section></section></div>
+<li>Defined in <a href="https://github.com/Pax1601/DCSOlympus/blob/39ddf10/client/src/panels/panel.ts#L24">src/panels/panel.ts:24</a></li></ul></aside></li></ul></section></section></div>
 <div class="col-sidebar">
 <div class="page-menu">
 <div class="tsd-navigation settings">
@@ -202,8 +204,8 @@
 <li><a href="#_element" class="tsd-is-private tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>#element</span></a></li>
 <li><a href="#_eventsManager" class="tsd-is-private tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>#events<wbr/>Manager</span></a></li>
 <li><a href="#_fadeTime" class="tsd-is-private"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>#fade<wbr/>Time</span></a></li>
-<li><a href="#_hideTimer" class="tsd-is-private"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>#hide<wbr/>Timer</span></a></li>
-<li><a href="#_visibilityTimer" class="tsd-is-private"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>#visibility<wbr/>Timer</span></a></li>
+<li><a href="#_messages" class="tsd-is-private"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>#messages</span></a></li>
+<li><a href="#_stackAfter" class="tsd-is-private"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>#stack<wbr/>After</span></a></li>
 <li><a href="#getElement" class="tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>get<wbr/>Element</span></a></li>
 <li><a href="#getEventsManager" class="tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>get<wbr/>Events<wbr/>Manager</span></a></li>
 <li><a href="#getVisible" class="tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>get<wbr/>Visible</span></a></li>
@@ -252,7 +254,8 @@
 <details class="tsd-index-accordion" open data-key="popups/popup"><summary class="tsd-accordion-summary"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><use href="#icon-chevronDown"></use></svg><a href="../modules/popups_popup.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4"></use></svg><span>popups/popup</span></a></summary>
 <div class="tsd-accordion-details">
 <ul class="tsd-nested-navigation">
-<li><a href="popups_popup.Popup.html" class="current"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><g id="icon-128"><rect fill="var(--color-icon-background)" stroke="var(--color-ts-class)" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="6"></rect><path d="M11.898 16.1201C11.098 16.1201 10.466 15.8961 10.002 15.4481C9.53803 15.0001 9.30603 14.3841 9.30603 13.6001V9.64012C9.30603 8.85612 9.53803 8.24012 10.002 7.79212C10.466 7.34412 11.098 7.12012 11.898 7.12012C12.682 7.12012 13.306 7.34812 13.77 7.80412C14.234 8.25212 14.466 8.86412 14.466 9.64012H13.386C13.386 9.14412 13.254 8.76412 12.99 8.50012C12.734 8.22812 12.37 8.09212 11.898 8.09212C11.426 8.09212 11.054 8.22412 10.782 8.48812C10.518 8.75212 10.386 9.13212 10.386 9.62812V13.6001C10.386 14.0961 10.518 14.4801 10.782 14.7521C11.054 15.0161 11.426 15.1481 11.898 15.1481C12.37 15.1481 12.734 15.0161 12.99 14.7521C13.254 14.4801 13.386 14.0961 13.386 13.6001H14.466C14.466 14.3761 14.234 14.9921 13.77 15.4481C13.306 15.8961 12.682 16.1201 11.898 16.1201Z" fill="var(--color-text)"></path></g></svg><span>Popup</span></a></li></ul></div></details></li>
+<li><a href="popups_popup.Popup.html" class="current"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><g id="icon-128"><rect fill="var(--color-icon-background)" stroke="var(--color-ts-class)" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="6"></rect><path d="M11.898 16.1201C11.098 16.1201 10.466 15.8961 10.002 15.4481C9.53803 15.0001 9.30603 14.3841 9.30603 13.6001V9.64012C9.30603 8.85612 9.53803 8.24012 10.002 7.79212C10.466 7.34412 11.098 7.12012 11.898 7.12012C12.682 7.12012 13.306 7.34812 13.77 7.80412C14.234 8.25212 14.466 8.86412 14.466 9.64012H13.386C13.386 9.14412 13.254 8.76412 12.99 8.50012C12.734 8.22812 12.37 8.09212 11.898 8.09212C11.426 8.09212 11.054 8.22412 10.782 8.48812C10.518 8.75212 10.386 9.13212 10.386 9.62812V13.6001C10.386 14.0961 10.518 14.4801 10.782 14.7521C11.054 15.0161 11.426 15.1481 11.898 15.1481C12.37 15.1481 12.734 15.0161 12.99 14.7521C13.254 14.4801 13.386 14.0961 13.386 13.6001H14.466C14.466 14.3761 14.234 14.9921 13.77 15.4481C13.306 15.8961 12.682 16.1201 11.898 16.1201Z" fill="var(--color-text)"></path></g></svg><span>Popup</span></a></li>
+<li><a href="popups_popup.PopupMessage.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg><span>Popup<wbr/>Message</span></a></li></ul></div></details></li>
 <li><a href="../modules/server_dataextractor.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4"></use></svg><span>server/dataextractor</span></a></li>
 <li><a href="../modules/server_servermanager.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4"></use></svg><span>server/servermanager</span></a></li>
 <li><a href="../modules/unit_citiesDatabase.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4"></use></svg><span>unit/cities<wbr/>Database</span></a></li>
