@@ -21,7 +21,7 @@
 <ul class="tsd-hierarchy">
 <li><span class="target">ContextAction</span></li></ul></section><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/Pax1601/DCSOlympus/blob/85325c1/client/src/unit/contextaction.ts#L7">src/unit/contextaction.ts:7</a></li></ul></aside>
+<li>Defined in <a href="https://github.com/Pax1601/DCSOlympus/blob/283b9e6/client/src/unit/contextaction.ts#L3">src/unit/contextaction.ts:3</a></li></ul></aside>
 <section class="tsd-panel-group tsd-index-group">
 <section class="tsd-panel tsd-index-panel">
 <details class="tsd-index-content tsd-index-accordion" open><summary class="tsd-accordion-summary tsd-index-summary">
@@ -38,7 +38,6 @@
 <a href="unit_contextaction.ContextAction.html#_hideContextAfterExecution" class="tsd-index-link tsd-is-private"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>#hide<wbr/>Context<wbr/>After<wbr/>Execution</span></a>
 <a href="unit_contextaction.ContextAction.html#_id" class="tsd-index-link tsd-is-private"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>#id</span></a>
 <a href="unit_contextaction.ContextAction.html#_label" class="tsd-index-link tsd-is-private"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>#label</span></a>
-<a href="unit_contextaction.ContextAction.html#_options" class="tsd-index-link tsd-is-private"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>#options</span></a>
 <a href="unit_contextaction.ContextAction.html#_units" class="tsd-index-link tsd-is-private"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>#units</span></a>
 </div></section>
 <section class="tsd-index-section">
@@ -50,14 +49,13 @@
 <a href="unit_contextaction.ContextAction.html#getHideContextAfterExecution" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>get<wbr/>Hide<wbr/>Context<wbr/>After<wbr/>Execution</span></a>
 <a href="unit_contextaction.ContextAction.html#getId" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>get<wbr/>Id</span></a>
 <a href="unit_contextaction.ContextAction.html#getLabel" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>get<wbr/>Label</span></a>
-<a href="unit_contextaction.ContextAction.html#getOptions" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>get<wbr/>Options</span></a>
 </div></section></div></details></section></section>
 <section class="tsd-panel-group tsd-member-group">
 <h2>Constructors</h2>
 <section class="tsd-panel tsd-member"><a id="constructor" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>constructor</span><a href="#constructor" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><g stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" id="icon-anchor"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5"></path><path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5"></path></g></svg></a></h3>
 <ul class="tsd-signatures">
-<li class="tsd-signature tsd-anchor-link" id="constructor.new_ContextAction"><span class="tsd-kind-constructor-signature">new <wbr/>Context<wbr/>Action</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">id</span>, <span class="tsd-kind-parameter">label</span>, <span class="tsd-kind-parameter">description</span>, <span class="tsd-kind-parameter">callback</span>, <span class="tsd-kind-parameter">hideContextAfterExecution</span><span class="tsd-signature-symbol">?</span>, <span class="tsd-kind-parameter">options</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="unit_contextaction.ContextAction.html" class="tsd-signature-type tsd-kind-class">ContextAction</a><a href="#constructor.new_ContextAction" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-signature tsd-anchor-link" id="constructor.new_ContextAction"><span class="tsd-kind-constructor-signature">new <wbr/>Context<wbr/>Action</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">id</span>, <span class="tsd-kind-parameter">label</span>, <span class="tsd-kind-parameter">description</span>, <span class="tsd-kind-parameter">callback</span>, <span class="tsd-kind-parameter">hideContextAfterExecution</span><span class="tsd-signature-symbol">?</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="unit_contextaction.ContextAction.html" class="tsd-signature-type tsd-kind-class">ContextAction</a><a href="#constructor.new_ContextAction" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
 <div class="tsd-parameters">
 <h4 class="tsd-parameters-title">Parameters</h4>
@@ -71,49 +69,42 @@
 <li>
 <h5><span class="tsd-kind-parameter">callback</span>: <span class="tsd-signature-type ">CallableFunction</span></h5></li>
 <li>
-<h5><span class="tsd-kind-parameter">hideContextAfterExecution</span>: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = true</span></h5></li>
-<li>
-<h5><span class="tsd-kind-parameter">options</span>: <a href="../interfaces/unit_contextaction.ContextActionOptionsInterface.html" class="tsd-signature-type tsd-kind-interface">ContextActionOptionsInterface</a></h5></li></ul></div>
+<h5><span class="tsd-kind-parameter">hideContextAfterExecution</span>: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = true</span></h5></li></ul></div>
 <h4 class="tsd-returns-title">Returns <a href="unit_contextaction.ContextAction.html" class="tsd-signature-type tsd-kind-class">ContextAction</a></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/Pax1601/DCSOlympus/blob/85325c1/client/src/unit/contextaction.ts#L16">src/unit/contextaction.ts:16</a></li></ul></aside></li></ul></section></section>
+<li>Defined in <a href="https://github.com/Pax1601/DCSOlympus/blob/283b9e6/client/src/unit/contextaction.ts#L11">src/unit/contextaction.ts:11</a></li></ul></aside></li></ul></section></section>
 <section class="tsd-panel-group tsd-member-group">
 <h2>Properties</h2>
 <section class="tsd-panel tsd-member tsd-is-private"><a id="_callback" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagPrivate">Private</code> <span>#callback</span><a href="#_callback" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">#callback</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type ">CallableFunction</span><span class="tsd-signature-symbol"> = null</span></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/Pax1601/DCSOlympus/blob/85325c1/client/src/unit/contextaction.ts#L11">src/unit/contextaction.ts:11</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/Pax1601/DCSOlympus/blob/283b9e6/client/src/unit/contextaction.ts#L7">src/unit/contextaction.ts:7</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member tsd-is-private"><a id="_description" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagPrivate">Private</code> <span>#description</span><a href="#_description" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">#description</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;&quot;</span></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/Pax1601/DCSOlympus/blob/85325c1/client/src/unit/contextaction.ts#L10">src/unit/contextaction.ts:10</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/Pax1601/DCSOlympus/blob/283b9e6/client/src/unit/contextaction.ts#L6">src/unit/contextaction.ts:6</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member tsd-is-private"><a id="_hideContextAfterExecution" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagPrivate">Private</code> <span>#hide<wbr/>Context<wbr/>After<wbr/>Execution</span><a href="#_hideContextAfterExecution" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">#hide<wbr/>Context<wbr/>After<wbr/>Execution</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = true</span></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/Pax1601/DCSOlympus/blob/85325c1/client/src/unit/contextaction.ts#L13">src/unit/contextaction.ts:13</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/Pax1601/DCSOlympus/blob/283b9e6/client/src/unit/contextaction.ts#L9">src/unit/contextaction.ts:9</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member tsd-is-private"><a id="_id" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagPrivate">Private</code> <span>#id</span><a href="#_id" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">#id</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;&quot;</span></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/Pax1601/DCSOlympus/blob/85325c1/client/src/unit/contextaction.ts#L8">src/unit/contextaction.ts:8</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/Pax1601/DCSOlympus/blob/283b9e6/client/src/unit/contextaction.ts#L4">src/unit/contextaction.ts:4</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member tsd-is-private"><a id="_label" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagPrivate">Private</code> <span>#label</span><a href="#_label" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">#label</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;&quot;</span></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/Pax1601/DCSOlympus/blob/85325c1/client/src/unit/contextaction.ts#L9">src/unit/contextaction.ts:9</a></li></ul></aside></section>
-<section class="tsd-panel tsd-member tsd-is-private"><a id="_options" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagPrivate">Private</code> <span>#options</span><a href="#_options" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
-<div class="tsd-signature"><span class="tsd-kind-property">#options</span><span class="tsd-signature-symbol">:</span> <a href="../interfaces/unit_contextaction.ContextActionOptionsInterface.html" class="tsd-signature-type tsd-kind-interface">ContextActionOptionsInterface</a></div><aside class="tsd-sources">
-<ul>
-<li>Defined in <a href="https://github.com/Pax1601/DCSOlympus/blob/85325c1/client/src/unit/contextaction.ts#L14">src/unit/contextaction.ts:14</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/Pax1601/DCSOlympus/blob/283b9e6/client/src/unit/contextaction.ts#L5">src/unit/contextaction.ts:5</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member tsd-is-private"><a id="_units" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagPrivate">Private</code> <span>#units</span><a href="#_units" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">#units</span><span class="tsd-signature-symbol">:</span> <a href="unit_unit.Unit.html" class="tsd-signature-type tsd-kind-class">Unit</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = []</span></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/Pax1601/DCSOlympus/blob/85325c1/client/src/unit/contextaction.ts#L12">src/unit/contextaction.ts:12</a></li></ul></aside></section></section>
+<li>Defined in <a href="https://github.com/Pax1601/DCSOlympus/blob/283b9e6/client/src/unit/contextaction.ts#L8">src/unit/contextaction.ts:8</a></li></ul></aside></section></section>
 <section class="tsd-panel-group tsd-member-group">
 <h2>Methods</h2>
 <section class="tsd-panel tsd-member"><a id="addUnit" class="tsd-anchor"></a>
@@ -128,7 +119,7 @@
 <h5><span class="tsd-kind-parameter">unit</span>: <a href="unit_unit.Unit.html" class="tsd-signature-type tsd-kind-class">Unit</a></h5></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/Pax1601/DCSOlympus/blob/85325c1/client/src/unit/contextaction.ts#L28">src/unit/contextaction.ts:28</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/Pax1601/DCSOlympus/blob/283b9e6/client/src/unit/contextaction.ts#L19">src/unit/contextaction.ts:19</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="executeCallback" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>execute<wbr/>Callback</span><a href="#executeCallback" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -136,7 +127,7 @@
 <li class="tsd-description">
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/Pax1601/DCSOlympus/blob/85325c1/client/src/unit/contextaction.ts#L52">src/unit/contextaction.ts:52</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/Pax1601/DCSOlympus/blob/283b9e6/client/src/unit/contextaction.ts#L39">src/unit/contextaction.ts:39</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="getCallback" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>get<wbr/>Callback</span><a href="#getCallback" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -144,7 +135,7 @@
 <li class="tsd-description">
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type ">CallableFunction</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/Pax1601/DCSOlympus/blob/85325c1/client/src/unit/contextaction.ts#L48">src/unit/contextaction.ts:48</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/Pax1601/DCSOlympus/blob/283b9e6/client/src/unit/contextaction.ts#L35">src/unit/contextaction.ts:35</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="getDescription" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>get<wbr/>Description</span><a href="#getDescription" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -152,7 +143,7 @@
 <li class="tsd-description">
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/Pax1601/DCSOlympus/blob/85325c1/client/src/unit/contextaction.ts#L44">src/unit/contextaction.ts:44</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/Pax1601/DCSOlympus/blob/283b9e6/client/src/unit/contextaction.ts#L31">src/unit/contextaction.ts:31</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="getHideContextAfterExecution" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>get<wbr/>Hide<wbr/>Context<wbr/>After<wbr/>Execution</span><a href="#getHideContextAfterExecution" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -160,7 +151,7 @@
 <li class="tsd-description">
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/Pax1601/DCSOlympus/blob/85325c1/client/src/unit/contextaction.ts#L57">src/unit/contextaction.ts:57</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/Pax1601/DCSOlympus/blob/283b9e6/client/src/unit/contextaction.ts#L44">src/unit/contextaction.ts:44</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="getId" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>get<wbr/>Id</span><a href="#getId" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -168,7 +159,7 @@
 <li class="tsd-description">
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/Pax1601/DCSOlympus/blob/85325c1/client/src/unit/contextaction.ts#L32">src/unit/contextaction.ts:32</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/Pax1601/DCSOlympus/blob/283b9e6/client/src/unit/contextaction.ts#L23">src/unit/contextaction.ts:23</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="getLabel" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>get<wbr/>Label</span><a href="#getLabel" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -176,15 +167,7 @@
 <li class="tsd-description">
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/Pax1601/DCSOlympus/blob/85325c1/client/src/unit/contextaction.ts#L36">src/unit/contextaction.ts:36</a></li></ul></aside></li></ul></section>
-<section class="tsd-panel tsd-member"><a id="getOptions" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><span>get<wbr/>Options</span><a href="#getOptions" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
-<ul class="tsd-signatures">
-<li class="tsd-signature tsd-anchor-link" id="getOptions.getOptions-1"><span class="tsd-kind-call-signature">get<wbr/>Options</span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/unit_contextaction.ContextActionOptionsInterface.html" class="tsd-signature-type tsd-kind-interface">ContextActionOptionsInterface</a><a href="#getOptions.getOptions-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
-<li class="tsd-description">
-<h4 class="tsd-returns-title">Returns <a href="../interfaces/unit_contextaction.ContextActionOptionsInterface.html" class="tsd-signature-type tsd-kind-interface">ContextActionOptionsInterface</a></h4><aside class="tsd-sources">
-<ul>
-<li>Defined in <a href="https://github.com/Pax1601/DCSOlympus/blob/85325c1/client/src/unit/contextaction.ts#L40">src/unit/contextaction.ts:40</a></li></ul></aside></li></ul></section></section></div>
+<li>Defined in <a href="https://github.com/Pax1601/DCSOlympus/blob/283b9e6/client/src/unit/contextaction.ts#L27">src/unit/contextaction.ts:27</a></li></ul></aside></li></ul></section></section></div>
 <div class="col-sidebar">
 <div class="page-menu">
 <div class="tsd-navigation settings">
@@ -210,7 +193,6 @@
 <li><a href="#_hideContextAfterExecution" class="tsd-is-private"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>#hide<wbr/>Context<wbr/>After<wbr/>Execution</span></a></li>
 <li><a href="#_id" class="tsd-is-private"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>#id</span></a></li>
 <li><a href="#_label" class="tsd-is-private"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>#label</span></a></li>
-<li><a href="#_options" class="tsd-is-private"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>#options</span></a></li>
 <li><a href="#_units" class="tsd-is-private"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>#units</span></a></li>
 <li><a href="#addUnit" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>add<wbr/>Unit</span></a></li>
 <li><a href="#executeCallback" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>execute<wbr/>Callback</span></a></li>
@@ -218,8 +200,7 @@
 <li><a href="#getDescription" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>get<wbr/>Description</span></a></li>
 <li><a href="#getHideContextAfterExecution" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>get<wbr/>Hide<wbr/>Context<wbr/>After<wbr/>Execution</span></a></li>
 <li><a href="#getId" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>get<wbr/>Id</span></a></li>
-<li><a href="#getLabel" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>get<wbr/>Label</span></a></li>
-<li><a href="#getOptions" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>get<wbr/>Options</span></a></li></ul></div></details></div>
+<li><a href="#getLabel" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>get<wbr/>Label</span></a></li></ul></div></details></div>
 <div class="site-menu">
 <nav class="tsd-navigation"><a href="../index.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><g id="icon-4"><rect fill="var(--color-icon-background)" stroke="var(--color-ts-namespace)" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="6"></rect><path d="M9.33 16V7.24H10.77L13.446 14.74C13.43 14.54 13.41 14.296 13.386 14.008C13.37 13.712 13.354 13.404 13.338 13.084C13.33 12.756 13.326 12.448 13.326 12.16V7.24H14.37V16H12.93L10.266 8.5C10.282 8.692 10.298 8.936 10.314 9.232C10.33 9.52 10.342 9.828 10.35 10.156C10.366 10.476 10.374 10.784 10.374 11.08V16H9.33Z" fill="var(--color-text)"></path></g></svg><span>DCSOlympus</span></a>
 <ul class="tsd-small-nested-navigation">
@@ -274,8 +255,7 @@
 <details class="tsd-index-accordion" open data-key="unit/contextaction"><summary class="tsd-accordion-summary"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><use href="#icon-chevronDown"></use></svg><a href="../modules/unit_contextaction.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4"></use></svg><span>unit/contextaction</span></a></summary>
 <div class="tsd-accordion-details">
 <ul class="tsd-nested-navigation">
-<li><a href="unit_contextaction.ContextAction.html" class="current"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><g id="icon-128"><rect fill="var(--color-icon-background)" stroke="var(--color-ts-class)" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="6"></rect><path d="M11.898 16.1201C11.098 16.1201 10.466 15.8961 10.002 15.4481C9.53803 15.0001 9.30603 14.3841 9.30603 13.6001V9.64012C9.30603 8.85612 9.53803 8.24012 10.002 7.79212C10.466 7.34412 11.098 7.12012 11.898 7.12012C12.682 7.12012 13.306 7.34812 13.77 7.80412C14.234 8.25212 14.466 8.86412 14.466 9.64012H13.386C13.386 9.14412 13.254 8.76412 12.99 8.50012C12.734 8.22812 12.37 8.09212 11.898 8.09212C11.426 8.09212 11.054 8.22412 10.782 8.48812C10.518 8.75212 10.386 9.13212 10.386 9.62812V13.6001C10.386 14.0961 10.518 14.4801 10.782 14.7521C11.054 15.0161 11.426 15.1481 11.898 15.1481C12.37 15.1481 12.734 15.0161 12.99 14.7521C13.254 14.4801 13.386 14.0961 13.386 13.6001H14.466C14.466 14.3761 14.234 14.9921 13.77 15.4481C13.306 15.8961 12.682 16.1201 11.898 16.1201Z" fill="var(--color-text)"></path></g></svg><span>Context<wbr/>Action</span></a></li>
-<li><a href="../interfaces/unit_contextaction.ContextActionOptionsInterface.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><g id="icon-256"><rect fill="var(--color-icon-background)" stroke="var(--color-ts-interface)" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="6"></rect><path d="M9.51 16V15.016H11.298V8.224H9.51V7.24H14.19V8.224H12.402V15.016H14.19V16H9.51Z" fill="var(--color-text)"></path></g></svg><span>Context<wbr/>Action<wbr/>Options<wbr/>Interface</span></a></li></ul></div></details></li>
+<li><a href="unit_contextaction.ContextAction.html" class="current"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><g id="icon-128"><rect fill="var(--color-icon-background)" stroke="var(--color-ts-class)" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="6"></rect><path d="M11.898 16.1201C11.098 16.1201 10.466 15.8961 10.002 15.4481C9.53803 15.0001 9.30603 14.3841 9.30603 13.6001V9.64012C9.30603 8.85612 9.53803 8.24012 10.002 7.79212C10.466 7.34412 11.098 7.12012 11.898 7.12012C12.682 7.12012 13.306 7.34812 13.77 7.80412C14.234 8.25212 14.466 8.86412 14.466 9.64012H13.386C13.386 9.14412 13.254 8.76412 12.99 8.50012C12.734 8.22812 12.37 8.09212 11.898 8.09212C11.426 8.09212 11.054 8.22412 10.782 8.48812C10.518 8.75212 10.386 9.13212 10.386 9.62812V13.6001C10.386 14.0961 10.518 14.4801 10.782 14.7521C11.054 15.0161 11.426 15.1481 11.898 15.1481C12.37 15.1481 12.734 15.0161 12.99 14.7521C13.254 14.4801 13.386 14.0961 13.386 13.6001H14.466C14.466 14.3761 14.234 14.9921 13.77 15.4481C13.306 15.8961 12.682 16.1201 11.898 16.1201Z" fill="var(--color-text)"></path></g></svg><span>Context<wbr/>Action</span></a></li></ul></div></details></li>
 <li><a href="../modules/unit_contextactionset.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4"></use></svg><span>unit/contextactionset</span></a></li>
 <li><a href="../modules/unit_group.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4"></use></svg><span>unit/group</span></a></li>
 <li><a href="../modules/unit_unit.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4"></use></svg><span>unit/unit</span></a></li>
