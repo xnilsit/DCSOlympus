@@ -1,32 +1,60 @@
-## Important note: DCS Olympus is in beta state. No official release has been produced yet. The first public version is planned for mid december 2023.
+<img width="600" src="https://github.com/Pax1601/DCSOlympus/assets/103559271/50039435-757b-4fe3-8058-a73376be669d"/>
+
+### DCS Olympus is now available!</div> </br> You can [download the latest version](https://github.com/Pax1601/DCSOlympus/releases) from the release section.
+
+DCS: Olympus is a free and open-source mod for DCS that enables dynamic real-time control through a map interface. The user is able to spawn units/groups, deploy a variety of effects such as smoke, flares, or explosions, and waypoints/tasks can be given to AI units in real-time in a way similar to a classic RTS game. DCS Olympus is open source and available to download for free!
+
+**For installation instructions and usage guide, please visit the [DCS Olympus Wiki](https://github.com/Pax1601/DCSOlympus/wiki).**
+
 <img align="left" width="30" src="https://github.com/Pax1601/DCSOlympus/assets/103559271/0ecff279-a87c-4e2d-a4c7-da98c74adf38">
 
 [**Join our Discord**](https://discord.gg/kNAQkhUHnQ)
 
 <img align="left" width="30" src="https://github.com/Pax1601/DCSOlympus/assets/103559271/1c0dd3fd-339c-4b03-94da-3e5215b0358a">
 
-[**YouTube**](https://www.youtube.com/@DCSOlympus)
+[**YouTube channel**](https://www.youtube.com/@DCSOlympus)
 
+</br>
 
-# DCS Olympus
+## What is Olympus?
+DCS: Olympus is a free and open-source mod for Digital Combat Simulator (DCS) that enables dynamic real-time control of units through a map interface. Spawn units and groups of all types, give them commands and tasks like a classic RTS game, and deploy a variety of effects such as smoke, flares, or explosions - all live while the mission is running!
 
-![alt text](https://github.com/Pax1601/DCSOlympus/blob/main/client/sample.png?raw=true)
+Olympus also includes many additional extras to enhance missions, including creating and tasking Tankers and AWACs on the fly, setting up custom formations, simulated firefights, dynamic accuracy and scenic settings for AAA - plus much more!
 
-### What is this?
-DCS: Olympus is a free and open-source mod for DCS that enables dynamic real-time control through a map interface. The user is able to spawn units/groups, deploy a variety of effects such as smoke, flares, or explosions, and waypoints/tasks can be given to AI units in real-time in a way similar to a classic RTS game. 
+Create the ultimate missions for your Squadron by controlling them in real-time for an experience never before seen inside DCS - for both Singleplayer and Multiplayer. 
 
-Additionally Olympus is able to run several effects and unit behaviours beyond the core DCS offerings. This includes such things as napalm and white phosphosous explosions, or setting up AA units to fire at players and miss, and more.
+DCS Olympus requires no client mods, can handle custom modules and is designed from the ground up with performance in mind.
+The full feature list is simply too long to enumerate in a short summary, but needless to say Olympus offers unique gameplay that has previously not existed within DCS World, and enhances many other elements of DCS in exciting ways! 
 
-It even includes Red and Blue modes which limit your view and powers to just seeing what your coalition sees, with a spawning budget you could play against your friends even with no-one in the game piloting, or have a Red commander working against a squadron of blue pilots, and/or a blue commander working with them. 
+</br>
 
-Even better it requires no client mods be installed if used on a server
+## How to install
+### Singleplayer install
+1. Download and unpack the latest release archive from the Github releases page.
+2. Install node.js with the provided installer (node-v20.10.0-x64.msi). You can change where node.js is installed if you want, but keep the other options to their default values.
+3. Run the Olympus installer and select the Local Installation option.
+4. Configure the options via the installer. You can keep the default frontend and backend ports, but you will need to enter Game Master, Blue Commander, and Red Commander passwords.
+5. Start a mission, click on the Olympus Client shortcut on your desktop.
+6. Login to DCS Olympus by using any username and the password you setup during installation. Enjoy!
 
-The full feature list is simply too long to enumerate in a short summary but needless to say Olympus offers up a lot of unique gameplay that has previously not existed, and enhances many other elements of DCS in exciting ways 
+### Dedicated Server install
+1. Download and unpack the latest release archive from the Github releases page
+2. Install node.js with the provided installer (node-v20.10.0-x64.msi). You can change where node.js is installed if you wish to do so, but keep the other options to their default values
+3. Run the Olympus installer and select the Dedicated server installation option
+4. Configure the options via the installer. You can keep the default frontend and backend ports, but you will have to enter new Game Master, Blue Commander, and Red Commander passwords
+5. Enable port forwarding for TCP & UDP on the frontend and backend port you selected during the step above
+6. For security reasons, your Olympus server will not be reachable from outside computers by default. To achieve that you have two options.
+   a) Run your DCS Server (not the Olympus server!) as administrator   
+   b) Enable url reservation for your user. To do so, run this command on a administrator command window: `netsh http add urlacl url="http://*:<backend port>/olympus/" user=<user-running-olympus>`
+7. Replace <backend port> with the backend port you selected during installation (3001 by default) and <user-running-dcs> with the name of the user that executes the DCS server. Note that this step is only required once, but must be repeated if the backend port is modified.
+8. Start the Olympus server running the shortcut on your desktop
+9. Start a mission and enjoy! People will be able to connect to your Olympus using their browsers by entering <server address>:<frontend port> in the address bar of any up-to-date browser.
 
-### Installing DCS Olympus
-A prebuilt installer will soon be released and available here
+For a full installation guide, plus common troubleshooting and a full user guide, see the [DCS Olympus Wiki](https://github.com/Pax1601/DCSOlympus/wiki).
 
-# Frequently Asked Questions
+</br>
+
+## Frequently Asked Questions
 ### Can I join up and help out with the project? ###
 We are currently running towards first release in the very near future so we are not looking to add more people to the core team for the moment. However that does not mean we are not open to collaborations and help going forward, if you want to help for now we are committed to the free and open source model so feel free to check out the github, familiarize yourself with the project and maybe even start submitting pull requests for open issues.
 
